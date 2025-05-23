@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
@@ -13,5 +12,5 @@ int main() {
             numerosCertos++;
         }
     }
-    cout<<numerosCertos;
+    cout<<numerosCertos<<"\n";
 }
