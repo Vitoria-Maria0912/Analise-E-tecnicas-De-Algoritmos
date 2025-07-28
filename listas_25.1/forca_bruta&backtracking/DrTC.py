@@ -11,10 +11,9 @@ def create_str(n, s):
 t = int(sys.stdin.readline()) # quantidade de testes
 
 for _ in range(t):
-    n = int(sys.stdin.readline()) # comprimento da String
-    s = list(map(int, sys.stdin.readline().removesuffix("\n"))) # String
-    
+    n = int(sys.stdin.readline().strip()) # comprimento da String
+    s = sys.stdin.readline().strip() # String
     if len(s) == n: 
-        created_str = create_str(n, s)
+        created_str = create_str(n, list(map(int, s)))
         count = "".join(created_str).count('1')
         print(count)
