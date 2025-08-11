@@ -46,3 +46,4 @@ for entry, esperado in zip(testes, answers):
     result = find_next(entry)
     assert result == esperado, f"Erro {i}: entry={entry}, esperado={esperado}, obtido={result}"
     i+=1
+print("All tests passed!")
