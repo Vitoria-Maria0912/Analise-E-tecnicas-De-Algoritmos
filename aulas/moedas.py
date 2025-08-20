@@ -1,5 +1,3 @@
-
-
 from collections import Counter
 
 def calculaTroco(total, conjunto):
@@ -8,7 +6,7 @@ def calculaTroco(total, conjunto):
     qtt_moedas = 0
     conjunto_resposta = []
     i = 0
-    while soma < total and i < len(conjunto):
+    while ((soma < total) and (i < len(conjunto))):
         maximo = max(conjunto[i:])
         if((soma + maximo) <= total):
             soma += maximo
