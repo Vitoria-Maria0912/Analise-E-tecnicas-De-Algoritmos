@@ -19,3 +19,4 @@ for i, n, c, t, out in zip(range(8), ns, cs, ts, esperado):
     resposta = pendrive(n, c, t, [], [], 0, 0)
     resposta_final = len(max(resposta, key=len))
     assert resposta_final == out, f"Erro {i}: esperado:{out}, tamanho:{resposta_final}, conjunto:{resposta}"
+print("✔️  Passou em todos os testes!")

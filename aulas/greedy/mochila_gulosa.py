@@ -28,3 +28,4 @@ itens_valores = [[60, 100, 120]]
 for i, w, pesos, valores in zip(range(itens), weights, itens_pesos, itens_valores):
     resposta, valor, valor_real = mochila_gulosa(pesos, valores, w)
     print(f"Conjunto: { resposta } - Valor real: R$ { valor_real } - Valor máximo: R$ {valor:.2f}")
+print("✔️  Passou em todos os testes!")

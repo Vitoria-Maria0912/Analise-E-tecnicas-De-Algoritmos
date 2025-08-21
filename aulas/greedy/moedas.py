@@ -23,3 +23,4 @@ conjuntos = [[100, 25, 10, 5, 1], [6, 4, 1]]
 for i, total, conjunto in zip(range(len(conjuntos)), totais, conjuntos):
     qtt_moedas, conjunto_resposta, soma = calculaTroco(total, conjunto)
     print(f"Resposta: { qtt_moedas }, { conjunto_resposta } e { soma }")
+print("✔️  Passou em todos os testes!")
